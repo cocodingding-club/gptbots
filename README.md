@@ -15,11 +15,12 @@
 ## 프로젝트 구조
 ```
 - project
-  - cmd
-  - configs
-  - internal
-  - pkg
-  - vendor(?)
+  - cmd [어플리케이션]
+  - configs [설정]
+  - internal [비공개 비즈니스 로직]
+  - pkg [외부 공개 라이브러리]
+  - vendor [의존성 다운로드]
+  - web [프론트엔드]
   - README.md
 ```
 - 참고: https://github.com/golang-standards/project-layout/blob/master/README_ko.md
