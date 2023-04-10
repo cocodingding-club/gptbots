@@ -1,7 +1,7 @@
 # Gabia Recommender
 
 ## 구현 목표
-- [ ] **0.실무나 독학시엔 제대로 써보기 힘든 고랭과 ChatGPT를 맘껏 가지고 놀기**
+- [ ] **0.실무나 독학시엔 제대로 써보기 힘든 고랭과 ChatGPT 유료 버전을 맘껏 가지고 놀기**
 - [ ] 1.[GoDaddy](https://kr.godaddy.com/domainsearch/find?checkAvail=1&tmskey=%5B%40T%5Bsitecorecontent%3A%3Cfirstchild+id%3D%22%7B4745D3A8-B61D-4744-B2F6-72EBAB8565D7%7D%22+runpipeline%3D%22false%22+%2F%3E%5D%40T%5D&segment=repeat&domainToCheck=gabia.com)의 적합한 대안 제시처럼 검색어와 유사한 도메인 추천 기능을 ChatGPT를 통해 [가비아 도메인 검색화면](https://domain.gabia.com/regist/regist_step1.php)에 구현
   - 대강의 로직 구조
     - 검색어에 대해 ChatGPT로 유사 도메인 목록을 받는다
