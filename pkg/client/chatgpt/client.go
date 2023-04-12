@@ -2,11 +2,20 @@ package chatgpt
 
 import (
 	"context"
+	"github.com/joho/godotenv"
 	openai "github.com/sashabaranov/go-openai"
+	"os"
 )
 
 func Ask(message string) string {
-	client := openai.NewClient("token")
+	env := os.Getenv("GPT_ENV")
+	if "" == env {
+		env = "local"
+	}
+	godotenv.Load(".env." + env)
+
+	token := os.Getenv("GPT_TOKEN")
+	client := openai.NewClient(token)
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
