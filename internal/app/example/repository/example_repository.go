@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/copolio/gabia-recommender/internal/app/example/model"
+import "cocodingding-club/gabia-recommender/internal/app/example/model"
 
 func GetExampleList() []model.Example {
 	examples := []model.Example{{

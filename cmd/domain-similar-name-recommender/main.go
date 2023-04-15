@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/copolio/gabia-recommender/internal/app/domain-similar-name-recommender/controller"
+	"cocodingding-club/gabia-recommender/internal/app/domain-similar-name-recommender/controller"
 	"github.com/gin-gonic/gin"
 )
 

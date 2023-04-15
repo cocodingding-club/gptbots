@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/copolio/gabia-recommender/pkg/client/chatgpt"
+	"cocodingding-club/gabia-recommender/pkg/client/chatgpt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
