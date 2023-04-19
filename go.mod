@@ -1,10 +1,12 @@
-module github.com/copolio/gabia-recommender
+module cocodingding/keyword-recommender
 
 go 1.20
 
 require (
 	github.com/gin-gonic/gin v1.9.0
 	github.com/go-resty/resty/v2 v2.7.0
+	github.com/joho/godotenv v1.5.1
+	github.com/sashabaranov/go-openai v1.7.0
 )
 
 require (
