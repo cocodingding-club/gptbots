@@ -1,6 +1,6 @@
 package repository
 
-import "cocodingding-club/gabia-recommender/internal/app/example/model"
+import "cocodingding/keyword-recommender/internal/app/example/model"
 
 func GetExampleList() []model.Example {
 	examples := []model.Example{{

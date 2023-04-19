@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"cocodingding-club/gabia-recommender/internal/app/example/repository"
+	"cocodingding/keyword-recommender/internal/app/example/repository"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

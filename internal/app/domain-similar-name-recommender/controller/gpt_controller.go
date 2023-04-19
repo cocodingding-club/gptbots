@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"cocodingding-club/gabia-recommender/pkg/client/chatgpt"
+	"cocodingding/keyword-recommender/pkg/client/chatgpt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

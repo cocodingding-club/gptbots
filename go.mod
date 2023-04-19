@@ -1,4 +1,4 @@
-module cocodingding-club/gabia-recommender
+module cocodingding/keyword-recommender
 
 go 1.20
 
