@@ -1,7 +1,7 @@
 package main
 
 import (
-	"cocodingding/keyword-recommender/internal/app/domain-similar-name-recommender/controller"
+	"cocodingding/gptbots/internal/app/domain-similar-name-recommender/controller"
 	"github.com/gin-gonic/gin"
 )
 

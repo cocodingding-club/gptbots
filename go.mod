@@ -1,4 +1,4 @@
-module cocodingding/keyword-recommender
+module cocodingding/gptbots
 
 go 1.20
 

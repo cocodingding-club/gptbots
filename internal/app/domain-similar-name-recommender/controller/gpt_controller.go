@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"cocodingding/keyword-recommender/pkg/client/chatgpt"
+	"cocodingding/gptbots/pkg/client/chatgpt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

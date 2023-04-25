@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"cocodingding/keyword-recommender/internal/app/example/repository"
+	"cocodingding/gptbots/internal/app/example/repository"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

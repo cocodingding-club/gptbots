@@ -1,7 +1,10 @@
-# Gabia Recommender
+# GPTBOTS
 
 ## 구현 목표
 - [ ] **0.실무나 독학시엔 제대로 써보기 힘든 고랭과 ChatGPT 유료 버전을 맘껏 가지고 놀기**
+- 챗봇 생성 api
+  - 챗봇 생성 API
+- 도메인 추천
 - [ ] 1.[GoDaddy](https://kr.godaddy.com/domainsearch/find?checkAvail=1&tmskey=%5B%40T%5Bsitecorecontent%3A%3Cfirstchild+id%3D%22%7B4745D3A8-B61D-4744-B2F6-72EBAB8565D7%7D%22+runpipeline%3D%22false%22+%2F%3E%5D%40T%5D&segment=repeat&domainToCheck=gabia.com)의 적합한 대안 제시처럼 검색어와 유사한 도메인 추천 기능을 ChatGPT를 통해 [가비아 도메인 검색화면](https://domain.gabia.com/regist/regist_step1.php)에 구현
   - 대강의 로직 구조
     - 검색어에 대해 ChatGPT로 유사 도메인 목록을 받는다
@@ -23,19 +26,6 @@
     - 위에서 적당한 오픈소스 라이브러리를 이용해 추출하면 될듯
     - 추출한 키워드에 대해 1번 유사 도메인 추천 기능으로 추천 목록 추출
   - 사용자의 키워드 및 주된 관심사 태그에 대한 도메인 추천 (serendipity)
-
-## 추가적으로 고려해볼만한 기능
-- [ ] 가비아의 다른 서비스와 시너지를 내거나 비슷한 추천 서비스를 제공할 수 있을까?
-  - 예시 Usecase
-    - 호스팅 혹은 클라우드 서비스를 이용 중인 고객의 관리콘솔 상에서 도메인 등록을 추천
-    - 반대로 도메인 관리툴 상에서 호스팅, 클라우드 상품을 추천
-  - 방법론
-    - 활용 가능한 데이터:
-      - 가비아에서 이용중인 호스팅/클라우드 상품
-      - 해당 상품과 연결된 도메인
-      - (가비아 네임서버를 이용하는 경우?) 일일 접속자수
-      - (구현 시) 사용자 관심사에 대한 태그
-    - TODO
   
 ## 프로젝트 구조
 ```
