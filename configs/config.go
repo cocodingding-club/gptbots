@@ -9,7 +9,7 @@ import (
 func LoadConfig() {
 	env := os.Getenv("APP_ENV")
 	if env == "" {
-		env = "dev"
+		env = "local"
 	}
 
 	err := godotenv.Load(".env" + env)
