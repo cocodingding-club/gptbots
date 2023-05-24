@@ -31,7 +31,8 @@ func GetGptResponse(c *gin.Context) {
 
 		// 에러 코드 추출
 		code := http.StatusBadRequest
-		_, _ = fmt.Sscanf(parts[1], "%d", &code)
+		codeStr := parts[1]
+		_, _ = fmt.Sscanf(codeStr, "%d", &code)
 
 		// 에러 생성
 		c.AbortWithStatusJSON(code, gin.H{"error": message})
