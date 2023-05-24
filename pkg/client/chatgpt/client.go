@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func Ask(message string) string {
+func Ask(message string) (string, error) {
 	env := os.Getenv("GPT_ENV")
 	if "" == env {
 		env = "local"
@@ -30,8 +30,8 @@ func Ask(message string) string {
 	)
 
 	if err != nil {
-		return "ChatCompletion error: %v\n"
+		return "", err
 	}
 
-	return resp.Choices[0].Message.Content
+	return resp.Choices[0].Message.Content, nil
 }
