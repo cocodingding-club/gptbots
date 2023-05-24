@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func Ask(message string) string {
+func Ask(message string) (string, error) {
 	token := os.Getenv("GPT_TOKEN")
 	client := openai.NewClient(token)
 	resp, err := client.CreateChatCompletion(
@@ -23,8 +23,8 @@ func Ask(message string) string {
 	)
 
 	if err != nil {
-		return "ChatCompletion error: %v\n"
+		return "", err
 	}
 
-	return resp.Choices[0].Message.Content
+	return resp.Choices[0].Message.Content, nil
 }

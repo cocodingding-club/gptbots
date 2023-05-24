@@ -10,9 +10,11 @@ func main() {
 	configs.LoadConfig()
 
 	r := gin.Default()
+
 	examples := r.Group("/gpt")
 	{
-		examples.GET("/ask", controller.GetGptResponse())
+		examples.GET("/ask", controller.GetGptResponse)
 	}
-	r.Run()
+
+	_ = r.Run(":8080")
 }
