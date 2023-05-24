@@ -36,7 +36,6 @@ func GetGptResponse(c *gin.Context) {
 
 		// 에러 생성
 		c.AbortWithStatusJSON(code, gin.H{"error": message})
-
 		return
 	}
 
