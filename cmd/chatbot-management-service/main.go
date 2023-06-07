@@ -2,7 +2,7 @@ package main
 
 import (
 	"cocodingding/gptbots/configs"
-	"cocodingding/gptbots/internal/app/chatbot-management-service/controller/chatbot"
+	"cocodingding/gptbots/internal/app/chatbot-management-service/controller"
 	"github.com/gin-gonic/gin"
 	"log"
 )
@@ -12,7 +12,7 @@ func init() {
 	configs.InitDB()
 }
 
-var chatbotController = new(chatbot.Controller)
+var chatbotController = new(controller.Controller)
 
 func main() {
 
@@ -25,7 +25,8 @@ func main() {
 			c := r.Group("/chatbot")
 			{
 				c.GET("", chatbotController.List)
-				c.GET(":id", chatbotController.Detail)
+				c.GET(":id", chatbotController.FindById)
+				c.GET("/name/:name", chatbotController.FindByName)
 				c.POST("", chatbotController.Create)
 				c.PUT(":id", chatbotController.Update)
 				c.DELETE(":id", chatbotController.Delete)
